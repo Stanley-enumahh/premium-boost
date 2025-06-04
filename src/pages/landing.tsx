@@ -37,7 +37,7 @@ function HeroSection() {
         <div className="absolute top-[14%] md:top-[16%] md:text-lg text-2xl md:left-[26%] left-[20%] text-blue-600 rounded-full">
           <FaTwitter />
         </div>
-        <div className="absolute bottom-16 md:top-1/2 left-[14%] md:left-[20%] p-2 bg-red-600 rounded-full">
+        <div className="absolute bottom-16 md:top-1/2 h-fit left-[14%] md:left-[20%] p-2 bg-red-600 rounded-full">
           <FaInstagram />
         </div>
         <div className="absolute bottom-4 right-[20%] rotate-[30deg] p-3 bg-blue-800 rounded-full">
