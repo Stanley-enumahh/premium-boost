@@ -41,7 +41,7 @@ function HeroSection() {
         <div className="absolute bottom-16 md:top-1/2 h-fit left-[14%] md:left-[20%] p-2 bg-red-600 rounded-full">
           <FaInstagram />
         </div>
-        <div className="absolute bottom-4 right-[20%] rotate-[30deg] p-3 bg-blue-800 rounded-full">
+        <div className="absolute bottom-4 md:bottom-12 right-[20%] rotate-[30deg] p-3 bg-blue-800 rounded-full">
           <FaLinkedinIn />
         </div>
       </div>
@@ -122,7 +122,7 @@ const Services = () => {
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
-        className="w-full max-w-[75%]"
+        className="w-full max-w-[80%] md:max-w-[75%]"
       >
         <CarouselContent className=" w-full">
           {medias.map((item, i) => (

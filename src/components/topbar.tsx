@@ -32,14 +32,11 @@ export const Topbar = () => {
         scrolled ? "bg-white/90 backdrop-blur-xl" : "md:bg-transparent bg-white"
       } w-full flex justify-center z-50 fixed top-0 left-0`}
     >
-      <div className="flex flex-row items-center relative justify-between w-[90%] md:w-[86%] h-[60px] mt-4">
+      <div className="flex flex-row items-center justify-between w-[90%] md:w-[86%] h-[60px] mt-4">
         <Logo />
-        <BiMenu
-          onClick={() => setIsOpen((s) => !s)}
-          className="absolute w-fit z-50 right-0 top-0 text-lg md:hidden flex mt-4"
-        />
+
         <ul
-          className={`flex flex-col w-full md:p-0 p-5 md:bg-transparent bg-white md:items-center items-end md:flex-row gap-3 transition-all duration-150 z-40 md:gap-5 h-fit md:static absolute  left-0 md:w-fit ${
+          className={`flex flex-col w-full md:p-0 p-5 md:bg-transparent bg-white md:items-center items-end md:flex-row gap-3 transition-all duration-150 z-40 md:gap-5 h-fit md:static absolute left-0 md:w-fit ${
             isOpen ? "top-[65px]" : "top-[-200px]"
           }`}
         >
@@ -67,6 +64,10 @@ export const Topbar = () => {
             Login
           </Link>
         </ul>
+        <BiMenu
+          onClick={() => setIsOpen((s) => !s)}
+          className=" w-fit z-50  text-lg md:hidden flex"
+        />
       </div>
     </div>
   );
