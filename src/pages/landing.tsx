@@ -64,7 +64,7 @@ function HeroSection() {
           >
             Get started
           </Link>
-          <button className="bg-greenlight text-white px-4 text-sm md:px-6 py-3 rounded-2xl hover:bg-greenlight/80 duration-150 transition-all">
+          <button className="bg-black text-white px-4 text-sm md:px-6 py-3 rounded-2xl hover:bg-black/80 duration-150 transition-all">
             Learn More
           </button>
         </div>

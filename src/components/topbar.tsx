@@ -32,7 +32,7 @@ export const Topbar = () => {
         scrolled ? "bg-white/90 backdrop-blur-xl" : "md:bg-transparent bg-white"
       } w-full flex justify-center z-50 fixed top-0 left-0`}
     >
-      <div className="flex flex-row items-center justify-between w-[90%] md:w-[86%] h-[60px] mt-4">
+      <div className="flex flex-row items-center justify-between w-[90%] md:w-[86%] h-[60px] mt-0 md:mt-4">
         <Logo />
 
         <ul
@@ -40,7 +40,7 @@ export const Topbar = () => {
             isOpen ? "top-[65px]" : "top-[-200px]"
           }`}
         >
-          <p className="flex px-4 py-1 text-gray-800 md:text-black items-center capitalize  gap-4 flex-row text-sm">
+          <p className="flex px-4 py-1 text-gray-800 md:text-black items-center capitalize gap-4 flex-row text-sm">
             About us
           </p>
           {navLinks.map((item) => (
@@ -50,7 +50,7 @@ export const Topbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "flex px-4 py-1 duration-150 capitalize transition-all text-bluedark green-100 text-sm items-center gap-3 "
-                  : "flex px-4 py-1  text-gray-800 md:text-black items-center capitalize  gap-3 flex-row text-sm"
+                  : "flex px-4 py-1 text-gray-800 md:text-black items-center capitalize  gap-3 flex-row text-sm"
               }
             >
               <p>{item.label}</p>
@@ -59,14 +59,14 @@ export const Topbar = () => {
 
           <Link
             to="/login"
-            className="bg-greenlight md:bg-bluedark px-5 ml-4 h-fit py-2 text-sm rounded-[10px] text-white"
+            className="bg-black px-5 ml-4 h-fit py-2 text-sm rounded-[10px] text-white"
           >
             Login
           </Link>
         </ul>
         <BiMenu
           onClick={() => setIsOpen((s) => !s)}
-          className=" w-fit z-50  text-lg md:hidden flex"
+          className=" w-fit z-50 text-lg md:hidden flex"
         />
       </div>
     </div>
