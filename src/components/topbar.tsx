@@ -29,7 +29,9 @@ export const Topbar = () => {
   return (
     <div
       className={`${
-        scrolled ? "bg-white/90 backdrop-blur-xl" : "md:bg-transparent bg-white"
+        scrolled
+          ? "bg-white/90 backdrop-blur-xl w-full"
+          : "md:bg-transparent w-full"
       } w-full flex justify-center z-50 fixed top-0 left-0`}
     >
       <div className="flex flex-row items-center relative justify-between w-[90%] md:w-[86%] h-[60px] mt-0 md:mt-4">
@@ -56,7 +58,6 @@ export const Topbar = () => {
               <p>{item.label}</p>
             </NavLink>
           ))}
-
           <Link
             to="/login"
             className="bg-black px-5 ml-4 h-fit py-2 text-sm rounded-[10px] text-white"
@@ -64,6 +65,7 @@ export const Topbar = () => {
             Login
           </Link>
         </ul>
+
         <BiMenu
           onClick={() => setIsOpen((s) => !s)}
           className=" w-fit z-50 text-lg absolute right-0 md:hidden flex"

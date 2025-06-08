@@ -28,7 +28,7 @@ import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
-    <div className="relative bg-white h-[650px] md:min-h-screen flex justify-center px-4 sm:px-6 md:px-10">
+    <div className="relative bg-white h-[600px] md:min-h-screen flex justify-center px-4 sm:px-6 md:px-10">
       {/* Background glow */}
       <div className="absolute top-[25%] left-[10%] w-[200px] h-[200px] sm:w-[260px] sm:h-[260px] bg-green-400 opacity-20 blur-3xl rounded-full z-0" />
       <div className="absolute bottom-20 right-10 w-32 h-32 sm:w-40 sm:h-40 bg-bluelight opacity-20 blur-2xl rounded-full z-0" />
@@ -60,11 +60,11 @@ function HeroSection() {
         <div className="flex flex-row justify-center gap-4 mt-5 text-sm w-full sm:w-auto">
           <Link
             to="/signup"
-            className="bg-bluelight text-white px-4 md:px-6 py-3 rounded-2xl hover:bg-bluelight/80 duration-150 transition-all"
+            className="bg-bluelight text-white px-5 md:px-6 py-3 rounded-2xl hover:bg-bluelight/80 duration-150 transition-all"
           >
             Get started
           </Link>
-          <button className="bg-black text-white px-4 text-sm md:px-6 py-3 rounded-2xl hover:bg-black/80 duration-150 transition-all">
+          <button className="bg-black text-white px-5 text-sm md:px-6 py-3 rounded-2xl hover:bg-black/80 duration-150 transition-all">
             Learn More
           </button>
         </div>
