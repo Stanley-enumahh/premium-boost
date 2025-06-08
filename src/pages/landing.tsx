@@ -24,6 +24,7 @@ const LandingPage = () => {
 export default LandingPage;
 
 import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -46,7 +47,7 @@ function HeroSection() {
       </div>
 
       {/* Hero content */}
-      <div className="z-10 text-center w-full sm:w-[90%] md:w-[60%] mt-[50px] md:mt-[80px] flex flex-col gap-3 items-center px-2">
+      <div className="z-10 text-center w-full sm:w-[90%] md:w-[60%] mt-[30px] md:mt-[80px] flex flex-col gap-3 items-center px-2">
         <h1 className="flex z-20 flex-col mt-[100px] md:mt-[60px] text-bluedark text-[27px] sm:text-[35px] md:text-[48px] leading-[34px] md:leading-[58px] items-center w-full text-center font-bold">
           Empower your brand <br /> with targeted social media growth and real
           engagement.
@@ -56,11 +57,14 @@ function HeroSection() {
           your growth goals. Secure, effective, and built for serious creators.
           your go to platform to gain followers, and skyrocket engagement.
         </p>
-        <div className="flex  flex-row justify-center gap-4 mt-5 w-full sm:w-auto">
-          <button className="bg-bluelight text-white px-6 py-3 rounded-2xl hover:bg-bluelight/80 duration-150 transition-all">
+        <div className="flex flex-row justify-center gap-4 mt-5 text-sm w-full sm:w-auto">
+          <Link
+            to="/signup"
+            className="bg-bluelight text-white px-4 md:px-6 py-3 rounded-2xl hover:bg-bluelight/80 duration-150 transition-all"
+          >
             Get started
-          </button>
-          <button className="bg-greenlight text-white px-6 py-3 rounded-2xl hover:bg-greenlight/80 duration-150 transition-all">
+          </Link>
+          <button className="bg-greenlight text-white px-4 text-sm md:px-6 py-3 rounded-2xl hover:bg-greenlight/80 duration-150 transition-all">
             Learn More
           </button>
         </div>
@@ -124,7 +128,7 @@ const Services = () => {
           {medias.map((item, i) => (
             <CarouselItem
               key={i}
-              className="w-full md:w-fit basis-full md:basis-1/3 h-fit "
+              className="w-full select-none md:w-fit basis-full md:basis-1/3 h-fit "
             >
               <div className="overflow-hidden w-full ml-2 h-full rounded-lg flex flex-col items-center justify-between border">
                 <span className="w-full h-[170px] bg-[#ebebeb] rounded">
