@@ -35,7 +35,7 @@ function HeroSection() {
 
       {/* Floating social media icons */}
       <div className="text-white z-0 pointer-events-none text-base sm:text-lg">
-        <div className="absolute top-[14%] md:top-[16%] md:text-lg text-2xl md:left-[26%] left-[20%] text-blue-600 rounded-full">
+        <div className="absolute top-[11%] md:top-[16%] md:text-lg text-2xl md:left-[26%] left-[20%] text-blue-600 rounded-full">
           <FaTwitter />
         </div>
         <div className="absolute bottom-16 md:top-1/2 h-fit left-[14%] md:left-[20%] p-2 bg-red-600 rounded-full">
@@ -47,7 +47,7 @@ function HeroSection() {
       </div>
 
       {/* Hero content */}
-      <div className="z-10 text-center w-full sm:w-[90%] md:w-[60%] mt-[30px] md:mt-[80px] flex flex-col gap-3 items-center px-2">
+      <div className="z-10 text-center w-full sm:w-[90%] md:w-[60%] mt-[10px] md:mt-[80px] flex flex-col gap-3 items-center px-2">
         <h1 className="flex z-20 flex-col mt-[100px] md:mt-[60px] text-bluedark text-[27px] sm:text-[35px] md:text-[48px] leading-[34px] md:leading-[58px] items-center w-full text-center font-bold">
           Empower your brand <br /> with targeted social media growth and real
           engagement.
@@ -138,7 +138,7 @@ const Services = () => {
                     className="w-full object-contain h-full select-none"
                   />
                 </span>
-                <span className="flex flex-col w-full gap-3 p-5">
+                <span className="flex flex-col w-full gap-3 p-3 md:p-5">
                   <h2 className="select-none">{item.title}</h2>
                   <p className="text-gray-700 text-sm select-none">
                     {item.info}

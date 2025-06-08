@@ -32,7 +32,7 @@ export const Topbar = () => {
         scrolled ? "bg-white/90 backdrop-blur-xl" : "md:bg-transparent bg-white"
       } w-full flex justify-center z-50 fixed top-0 left-0`}
     >
-      <div className="flex flex-row items-center relative justify-between w-[90%] md:w-[86%] h-[60px] mt-0 md:mt-4 bg-red-300">
+      <div className="flex flex-row items-center relative justify-between w-[90%] md:w-[86%] h-[60px] mt-0 md:mt-4">
         <Logo />
 
         <ul
@@ -66,7 +66,7 @@ export const Topbar = () => {
         </ul>
         <BiMenu
           onClick={() => setIsOpen((s) => !s)}
-          className=" w-fit z-50 text-lg md:hidden flex"
+          className=" w-fit z-50 text-lg absolute right-0 md:hidden flex"
         />
       </div>
     </div>
